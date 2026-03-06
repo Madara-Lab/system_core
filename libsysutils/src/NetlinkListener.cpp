@@ -60,7 +60,7 @@ bool NetlinkListener::onDataAvailable(SocketClient *cli)
 #ifdef __ANDROID_RECOVERY__
         SLOGW("recvmsg failed (%s)", strerror(errno));
 #else
-        SLOGE("recvmsg failed (%s)", strerror(errno));
+//      SLOGE("recvmsg failed (%s)", strerror(errno));
 #endif
         return false;
     }
